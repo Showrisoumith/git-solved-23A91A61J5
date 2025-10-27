@@ -3,23 +3,30 @@ application:
   name: DevOpsSimulator
   version: 1.0.0
   environment: production
-  
+
 server:
   host: 0.0.0.0
   port: 8080
   ssl_enabled: true
-  
+  # Optional: enable hot reload only in development mode
+  hot_reload: false
+
 logging:
   level: INFO
   format: json
   output: /var/log/app.log
-  
+  # Optional: show stack trace for debugging (disabled in production)
+  show_stack_trace: false
+
 database:
   host: prod-db.example.com
   port: 5432
   name: devops_prod
-  
+
 features:
   auto_scaling: true
   load_balancer: enabled
   backup_enabled: true
+  # Optional development-only features
+  dev_hot_reload: false
+  dev_debug_mode: false
