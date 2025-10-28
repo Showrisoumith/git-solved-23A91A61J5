@@ -1,0 +1,24 @@
+* 7f11bbb (HEAD -> feature/another-feature) docs: Add changelog
+* fac3b44 (origin/feature/another-feature) docs: Add Git journey documentation
+* 7f8a526 (tag: v1.1.0, tag: v1.0.0) docs: Documented revert, reset, and reflog usage
+* 34f86c0 Bad commit
+* d637d2a feat: Add test feature
+* 256a27b (origin/main, main) docs: Update README
+* 5cd6d9a docs: Documented cherry-pick usage (1 time)
+* c1bdd14 feat: Add new feature
+* 3bf0293 docs: Add FAQ section
+| * 9207d0b (feature/new-feature) docs: Documented stash usage (1 time)
+| * 7fe3eeb (origin/feature/new-feature) feat: Add new feature
+|/  
+* cf5d15d Documented fetch and pull usage in Phase 4
+*   d8c15be Merge resolved: completed merge from instructor/main
+|\  
+| * d3dd9b2 (instructor/conflict-simulator) updating conflict-simulator
+* |   92e2dc5 merge: Resolve all conflicts between main and dev branches
+|\ \  
+| * | 02011a5 (instructor/dev, dev) updating dev
+| |/  
+* | 0312c6f (instructor/main, instructor/HEAD) updating main
+* | fadfd24 Revise README for DevOps Simulator project
+|/  
+* ae630eb Initial commit
