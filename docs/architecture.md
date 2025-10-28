@@ -1,11 +1,12 @@
-Sure! Here’s your **merged version** of the document exactly in the same **code format style** you used (with Markdown headings inside a code block):
-
-```md
 # System Architecture
 
 ## Overview
 DevOps Simulator follows a microservices architecture designed for high availability and scalability.  
 It supports both **Production** and **Development** environments with separate configurations.
+
+> ⚠️ *Note:* Experimental features such as AI-powered scaling, event-driven processing, and multi-cloud orchestration are currently **in beta** and should not be used in production without testing.
+
+---
 
 ## Environments
 
@@ -18,26 +19,36 @@ Optimized for performance, reliability, and scalability.
 - **Technology**: Node.js + Express
 - **Port**: 8080
 - **Scaling**: Horizontal auto-scaling enabled
+- **Experimental Option**:  
+  *(commented out in production)* AI-powered predictive scaling using TensorFlow.js  
+  *(requires Kafka event queue and ML inference service)*
 
 ### 2. Database Layer
 - **Database**: PostgreSQL 14
 - **Configuration**: Master-slave replication
-- **Backup**: Daily automated backups
+- **Backup**: Daily automated backups  
+- **Experimental Option**:  
+  Distributed PostgreSQL cluster (5 nodes) with ML-based index optimization and Redis cache tuning.
 
 ### 3. Monitoring System
 - **Tool**: Prometheus + Grafana
 - **Metrics**: CPU, Memory, Disk, Network
 - **Alerts**: Email notifications for critical issues
+- **Experimental Option**:  
+  AI-driven anomaly detection and log analysis (requires ELK + TensorFlow backend)
 
 ## Deployment Strategy
 - **Method**: Rolling updates
 - **Zero-downtime**: Yes
 - **Rollback**: Automated on failure
+- **Experimental Option**:  
+  Chaos testing with automated rollback on detected anomalies.
 
 ## Security
 - SSL/TLS encryption
 - Database connection encryption
 - Regular security audits
+- **Experimental Option**: Zero-trust authentication and continuous compliance scanning
 
 ---
 
@@ -51,6 +62,8 @@ Focused on rapid iteration and debugging with experimental features.
 - **Port**: 3000
 - **Scaling**: Manual (single instance for development)
 - **Debug**: Chrome DevTools debugger on port 9229
+- **Optional Experimental Mode**:  
+  Run on AI-enhanced server stack using TensorFlow.js for predictive load management.
 
 ### 2. Database Layer
 - **Database**: PostgreSQL 14 (local instance)
@@ -68,6 +81,8 @@ Focused on rapid iteration and debugging with experimental features.
 - **Tool**: Docker Compose (local)
 - **Services**: App, Database, Redis cache
 - **Volume Mounts**: Code directory for hot reload
+- **Experimental Option**:  
+  Kubernetes-based orchestration (local K3s cluster) with AI workload balancing.
 
 ### 5. Authentication System (Beta)
 - **Method**: OAuth2 + JWT
@@ -92,9 +107,12 @@ Focused on rapid iteration and debugging with experimental features.
 - CORS enabled for all origins
 - Debug endpoints exposed
 
-## Experimental Features
-⚠️ **Warning**: The following features are experimental:
-- Multi-cloud deployment
-- AI-powered log analysis
-- Automatic rollback on anomaly detection
-```
+---
+
+## Experimental Features (Documented)
+⚠️ **Warning:** The following features are experimental and disabled by default:
+- Event-driven microservices via Apache Kafka
+- AI/ML pipeline (TensorFlow, PyTorch, Scikit-learn)
+- Multi-cloud deployment (AWS, Azure, GCP, DigitalOcean)
+- Chaos engineering & anomaly-based rollback
+- AI log analysis and performance optimization

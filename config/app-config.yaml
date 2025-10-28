@@ -1,32 +1,62 @@
-# Production Application Configuration
+# Unified Application Configuration (Production + Experimental Notes)
+# Strategy:
+# - Production configuration is active and stable
+# - Experimental features are commented out for future enablement
+# - Maintains backward compatibility
+
 application:
   name: DevOpsSimulator
   version: 1.0.0
   environment: production
+  # experimental_mode: true   # Uncomment to enable experimental testing
 
 server:
   host: 0.0.0.0
   port: 8080
   ssl_enabled: true
-  # Optional: enable hot reload only in development mode
   hot_reload: false
+  # multi_port: [9000, 9001, 9002]   # Experimental multi-port setup
 
 logging:
   level: INFO
   format: json
   output: /var/log/app.log
-  # Optional: show stack trace for debugging (disabled in production)
   show_stack_trace: false
+  # format: structured              # Experimental structured logging
+  # ai_analysis: enabled            # AI-based log analysis (experimental)
 
 database:
   host: prod-db.example.com
   port: 5432
   name: devops_prod
+  # host: cluster.example.com       # Distributed DB cluster (experimental)
+  # distributed: true
 
 features:
   auto_scaling: true
   load_balancer: enabled
   backup_enabled: true
-  # Optional development-only features
   dev_hot_reload: false
   dev_debug_mode: false
+  # auto_scaling: advanced          # Experimental scaling mode
+  # chaos_engineering: enabled      # Experimental chaos mode
+
+# Experimental AI Features (commented out)
+# ai_features:
+#   predictive_scaling: true
+#   anomaly_detection: true
+#   auto_optimization: true
+#   model_version: "v2.1.0"
+
+# Experimental Cloud Providers (not yet in production)
+# cloud_providers:
+#   - aws
+#   - azure
+#   - gcp
+#   - digitalocean
+
+# Experimental Security Enhancements
+# security:
+#   zero_trust: enabled
+#   encryption: AES-256
+#   audit_logging: comprehensive
