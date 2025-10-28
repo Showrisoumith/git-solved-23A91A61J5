@@ -7,4 +7,7 @@
 - Used `reset` 3 times, `revert` 1 time
 ## Phae  4.5
 - Created 2+ tags
+## Phase 4.6
+- Practiced revert, reset, and reflog
+- Created and pushed feature branches successfully
 
