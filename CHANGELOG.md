@@ -1,10 +1,16 @@
-## Phase 4
-- Used `git fetch` 1 time
-- Used `git pull` 1 time
-## Phase 4.3
-- Used `cherry-pick` 1 time to bring commit from `feature/new-feature` to `main`
-## Phase 4.4
-- Used `reset` 3 times, `revert` 1 time
-## Phae  4.5
-- Created 2+ tags
-
+- fac3b44: docs: Add Git journey documentation (Showrisoumith, 19 seconds ago)
+- 7f8a526: docs: Documented revert, reset, and reflog usage (Showrisoumith, 19 minutes ago)
+- 34f86c0: Bad commit (Showrisoumith, 31 minutes ago)
+- d637d2a: feat: Add test feature (Showrisoumith, 35 minutes ago)
+- 256a27b: docs: Update README (Showrisoumith, 35 minutes ago)
+- 5cd6d9a: docs: Documented cherry-pick usage (1 time) (Showrisoumith, 36 minutes ago)
+- c1bdd14: feat: Add new feature (Showrisoumith, 46 minutes ago)
+- 3bf0293: docs: Add FAQ section (Showrisoumith, 47 minutes ago)
+- cf5d15d: Documented fetch and pull usage in Phase 4 (Showrisoumith, 50 minutes ago)
+- d8c15be: Merge resolved: completed merge from instructor/main (Showrisoumith, 56 minutes ago)
+- 92e2dc5: merge: Resolve all conflicts between main and dev branches (Showrisoumith, 18 hours ago)
+- d3dd9b2: updating conflict-simulator (Hanu Gupta, 5 days ago)
+- 02011a5: updating dev (Hanu Gupta, 5 days ago)
+- 0312c6f: updating main (Hanu Gupta, 5 days ago)
+- fadfd24: Revise README for DevOps Simulator project (Hanu Gupta, 5 days ago)
+- ae630eb: Initial commit (Hanu Gupta, 5 days ago)
